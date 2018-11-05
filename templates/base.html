@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        { % block head % }
+        <title>{ % block title % }{ % endblock % } - My Application</title>
+        { % endblock % }
+        <link rel="shortcut icon" href="{{ url_for('static', filename = 'favicon.ico') }}"  type="image/x-icon">
+        <link rel="icon" href="{{ url_for('static', filename = 'favicon.ico') }}" type="image/x-icon">
+    </head>
+    <body>
+        { % block body % }
+        { % endblock % }
+    </body>
+</html>
